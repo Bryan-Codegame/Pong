@@ -18,7 +18,6 @@ int main()
     // Create a ball
     Ball ball(1920 / 2, 0);
 
-    // We will add a ball in the next chapter
     // Create a Text object called HUD
     Text hud;
     // A cool retro-style font
