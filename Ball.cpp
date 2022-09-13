@@ -19,7 +19,7 @@ RectangleShape Ball::getShape()
 	return m_Shape;
 }
 
-//Le dice al main en que direcciÛn la bola est· viajando
+//Le dice al main en que direcci√≥n la bola est√° viajando
 //No necesitamos getYVelocity porque nos basta con X
 float Ball::getXVelocity()
 {
@@ -28,7 +28,7 @@ float Ball::getXVelocity()
 
 void Ball::reboundSides()
 {
-	//Si choca en las paredes me va a devolver la direcciÛn contraria por eso el -
+	//Si choca en las paredes me va a devolver la direcci√≥n contraria por eso el -
 	m_DirectionX = -m_DirectionX;
 }
 
@@ -40,10 +40,10 @@ void Ball::reboundBatOrTop()
 
 void Ball::reboundBottom()
 {
-	//Reiniciamos la posiciÛn porque ya que tocÛ el piso entonces el jugador pierde.
+	//Reiniciamos la posici√≥n porque ya que toc√≥ el piso entonces el jugador pierde.
 	m_Position.y = 0;
 	m_Position.x = 500;
-	m_DirectionY = -m_DirectionY;
+	m_DirectionY = m_DirectionY;
 }
 
 void Ball::update(Time dt)
